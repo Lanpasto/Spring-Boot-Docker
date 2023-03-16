@@ -1,1 +1,16 @@
+app:
+  public_list_size: ${LIST_SIZE}
 
+---
+
+spring:
+  profiles: dev
+app:
+  host: http://localhost:8080
+
+---
+
+spring:
+  profiles: prod
+app:
+  host: http://sp.sendel.com
